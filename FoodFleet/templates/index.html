@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1473968512647-3e447244af8f');">
+    <div class="container">
+        <div class="row min-vh-100 align-items-center">
+            <div class="col-md-6">
+                <h1 class="display-4 text-white">Welcome to Kitchen Drone</h1>
+                <p class="lead text-white">Experience the future of food delivery - straight from our kitchen to your doorstep via drone!</p>
+                <a href="/menu" class="btn btn-primary btn-lg">View Menu</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="featured-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Featured Dishes</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398" class="card-img-top" alt="Featured Dish">
+                    <div class="card-body">
+                        <h5 class="card-title">Butter Chicken</h5>
+                        <p class="card-text">Rich and creamy butter chicken curry</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8" class="card-img-top" alt="Featured Dish">
+                    <div class="card-body">
+                        <h5 class="card-title">Paneer Tikka</h5>
+                        <p class="card-text">Grilled cottage cheese with Indian spices</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d" class="card-img-top" alt="Featured Dish">
+                    <div class="card-body">
+                        <h5 class="card-title">Dal Makhani</h5>
+                        <p class="card-text">Creamy black lentils, slow-cooked to perfection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

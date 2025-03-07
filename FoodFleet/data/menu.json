@@ -1,0 +1,61 @@
+{
+  "categories": [
+    {
+      "name": "Starters",
+      "items": [
+        {
+          "id": "1",
+          "name": "Paneer Tikka",
+          "description": "Grilled cottage cheese marinated in spices",
+          "price": 199,
+          "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8"
+        },
+        {
+          "id": "2",
+          "name": "Veg Spring Roll",
+          "description": "Crispy rolls filled with mixed vegetables",
+          "price": 149,
+          "image": "https://images.unsplash.com/photo-1606491956689-2ea866880c84"
+        }
+      ]
+    },
+    {
+      "name": "Main Course",
+      "items": [
+        {
+          "id": "3",
+          "name": "Butter Chicken",
+          "description": "Tender chicken in rich tomato butter gravy",
+          "price": 299,
+          "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398"
+        },
+        {
+          "id": "4",
+          "name": "Dal Makhani",
+          "description": "Creamy black lentils cooked overnight",
+          "price": 249,
+          "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d"
+        }
+      ]
+    },
+    {
+      "name": "Breads",
+      "items": [
+        {
+          "id": "5",
+          "name": "Butter Naan",
+          "description": "Soft tandoor-baked bread with butter",
+          "price": 49,
+          "image": "https://images.unsplash.com/photo-1626074353765-517a681e40be"
+        },
+        {
+          "id": "6",
+          "name": "Garlic Roti",
+          "description": "Whole wheat bread with garlic",
+          "price": 39,
+          "image": "https://images.unsplash.com/photo-1631515242808-499c2c9f6a49"
+        }
+      ]
+    }
+  ]
+}

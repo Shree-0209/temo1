@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="text-center mb-4">Checkout</h1>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="card-title">Delivery Information</h3>
+                    <form id="checkoutForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pincode" class="form-label">Pincode</label>
+                            <select class="form-select" id="pincode" required>
+                                <option value="">Select Pincode</option>
+                                <option value="591143">591143</option>
+                                <option value="591153">591153</option>
+                                <option value="590018">590018</option>
+                                <option value="590006">590006</option>
+                                <option value="590008">590008</option>
+                            </select>
+                            <div id="pincodeError" class="invalid-feedback">
+                                Sorry, delivery is not available in this area.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Delivery Address</label>
+                            <textarea class="form-control" id="address" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="notes" class="form-label">Special Instructions</label>
+                            <textarea class="form-control" id="notes" rows="2"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Order Summary</h3>
+                    <div id="orderItems" class="mb-3"></div>
+                    <hr>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">₹0.00</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <strong>Total:</strong>
+                        <strong id="total">₹0.00</strong>
+                    </div>
+                    <button class="btn btn-primary w-100" id="placeOrderBtn">Place Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
